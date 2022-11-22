@@ -5,7 +5,8 @@ const Header = () => {
     const menuItem = <React.Fragment>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/dashboard">Dashboard</Link></li>
-        <li><Link>Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
     </React.Fragment>
     return (
         <div>
@@ -19,7 +20,7 @@ const Header = () => {
                             {menuItem}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
@@ -27,7 +28,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Get started</a>
+                    <Link className="btn">Get started</Link>
                 </div>
             </div>
         </div>
